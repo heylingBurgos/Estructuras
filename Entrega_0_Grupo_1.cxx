@@ -21,6 +21,6 @@ int main(int argc, char *argv[]){
 			cout<<argv[i]<<endl;
 		}
 	}while(strcmp(comando,"salir")!=0);
-
+	cout<<"hola"<<endl;
 	return 0;
 }
