@@ -12,18 +12,15 @@ using namespace std;
 
 int main(int argc, char *argv[]){
 	
-	cout<<endl<<"$"<<endl;
 	char *comando = new char [20];
 	strcpy(comando, argv[1]);
-	cout<<argc<<endl;
-	cout<<comando<<endl;
-	cout<<endl;
-	for(int i=0; i<argc; i++){
-		cout<<argv[i]<<endl;
-	}
-	if(strcmp(argv[1],"lol")==0){
-		cout<<"ok"<<endl;
-	}
+	do{
+		cout<<endl<<"$"<<endl;
+		cout<<"Su comando fue: "<<comando<<endl;
+		for(int i=0; i<argc; i++){
+			cout<<argv[i]<<endl;
+		}
+	}while(strcmp(comando,"salir")!=0);
 
 	return 0;
 }
